@@ -1,0 +1,40 @@
+# Python virtual environments
+.venv/
+.env/
+env/
+venv/
+
+# Environment variables
+.env
+.env.*
+
+# Data and model files
+*.json
+models/
+*.pt
+*.pth
+*.safetensors
+
+# System files
+.DS_Store
+*/.DS_Store
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.parquet
+*.png
+
+# 
+logs/
+temp/
+*.pid
+*.err
+*.out

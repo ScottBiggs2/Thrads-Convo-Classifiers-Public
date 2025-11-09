@@ -1,3 +1,13 @@
+# ***Thrad.ai Conversation Classifiers GitHub***
+
+A repo with background and guidance for working with the open-source `Thrad_distilBERT_ConvoClassifier` and `Thrad_BERT_ConvoClassifier` models from HuggingFace [LINK HERE]! 
+
+Our models are trained to classify the content of user LLM chats, with special attention payed to protecting businesses from interacting with chats deemed innapropriate. They outperform LLMs 100-200X their size by parameter count by at least 1/3, and can run inference in <50ms on everyday hardware. 
+
+To contribute to the project, create an issue in this repository, or contact Scott Biggs or Marco Visentin at Thrad.ai. We encourage anyone interested to use our models to help make ads-in-AI and the AI ecosystem at large safer for businesses and more private for users. 
+
+For more technical breakdown of the design, training, and evaluation process, refer to the technical blog pasted on our HuggingFace page here [LINK HERE]
+
 # Performance and Cost: 
 Costs calculated based on the rates on 8 Nov 2025. 
 ```bash 
@@ -17,15 +27,16 @@ You can review a more detailed breakdown of these stats in `eval/distilBERT_resu
 ```bash
 BERT
 ====================================================================================================
-Model                          Accuracy     Cross-Cat Err   Banned→Safe     Avg Time (ms)   Cost      
+Model                              Accuracy     Cross-Cat Err     Banned→Safe        Cost      
 ====================================================================================================
-PyTorch (safetensors)               74.37%           7.73%             87         143.77  $  0.0000
-Llama 3.1 8B (Groq)                 41.91%          14.39%            282         470.88  $  0.1677
-GPT OSS 20B                         31.21%          17.67%            385         445.17  $  0.2535
-GPT OSS 120B                        58.81%          11.02%            232         731.38  $  0.5071
+PyTorch (safetensors)               74.37%           7.73%             87          $  0.0000
+Llama 3.1 8B (Groq)                 41.91%          14.39%            282          $  0.1677
+GPT OSS 20B                         31.21%          17.67%            385          $  0.2535
+GPT OSS 120B                        58.81%          11.02%            232          $  0.5071
 ====================================================================================================
 ```
 You can review a more detailed breakdown of these stats in `eval/BERT_results.json`. Statistics are calculated on a held out test dataset of 2224 samples. 
+
 
 # Message Cleaning: 
 
